@@ -1,0 +1,5 @@
+<div id="container"></div>
+<%= form_tag "/post", remote: true do %>
+  <%= text_area_tag :message, nil, rows: 4, id: :message %>
+  <%= submit_tag %>
+<% end %>
